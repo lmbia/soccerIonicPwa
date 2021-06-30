@@ -3,7 +3,7 @@
 
 ## ¿Como utilizar la Aplicacion?
 * Alternativa 1:
-* Ejecutar la aplicación en el siguiente link Vercel: 
+* Ejecutar la aplicación en el siguiente link Vercel: https://soccer-chi.vercel.app/
 
 * Alternativa 2:
 * Descargar los archivos
