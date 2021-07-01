@@ -22,7 +22,7 @@ window.addEventListener('online', event => {
 
 if (!navigator.onLine) {
   console.log('Estamos offline 2');
-  location.href = "offline.html";
+  /* location.href = "offline.html"; */
 } 
 
 
