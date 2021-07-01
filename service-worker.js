@@ -7,7 +7,8 @@ const cacheName = 'cache-version';
 const precache = [
  './css/estilos.css',
  './index.html',
- './offline.html'
+ './offline.html',
+ './js/sw.js',
 ];
  
 
