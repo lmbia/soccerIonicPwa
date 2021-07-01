@@ -10,19 +10,20 @@ if ('serviceWorker' in navigator) {
 
 // Event Listener para Offline/ Online Status
 window.addEventListener('offline', event => {
-  console.log('Estamos offline');
-  location.href = "./offline.html";
+  console.log('Estamos offline 1');
+  location.href = "offline.html";
 });
 
 window.addEventListener('online', event => {
   console.log('Estamos Online');
-  location.href = "./index.html";
+  location.href = "index.html";
+  
 });
 
 if (!navigator.onLine) {
-  console.log('Estamos offline');
-  location.href = "./offline.html";
-}
+  console.log('Estamos offline 2');
+  location.href = "offline.html";
+} 
 
 
 
