@@ -7,6 +7,11 @@
     --ion-color-danger: rgb(94, 170, 132)!important;   
 }
 
+.container-mobile {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 /* Set text color of the entire app for iOS only */
 .ios {
     --ion-text-color: rgb(73, 73, 73);
