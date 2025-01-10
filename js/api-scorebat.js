@@ -21,10 +21,10 @@ window.addEventListener('load', () => {
         dibujarUltimosPartidos(result);
         dibujarBotonAdd();
         abrirModal(result);
-       
+
         /* Search Bar */
         let input = document.querySelector('.searchbar-input');
-        input.addEventListener('keydown', function () {
+        input.addEventListener('keydown', function (event) {
             if (event.keyCode == 13) {
                 let palabra = input.value;
                 if (input.value != '' && input.value != 0) {

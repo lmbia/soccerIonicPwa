@@ -1,6 +1,6 @@
 // Chequeo si el browser puede usar Service Worker
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js')
+  navigator.serviceWorker.register('./service-worker.js')
     .then(reg => {
       console.log("Service worker esta listo! ");
     });
@@ -10,20 +10,24 @@ if ('serviceWorker' in navigator) {
 
 // Event Listener para Offline/ Online Status
 window.addEventListener('offline', event => {
-  console.log('Estamos offline');
+  console.log('Estamos offline 1');
+  location.href = "offline.html";
 });
 
 window.addEventListener('online', event => {
   console.log('Estamos Online');
+  location.href = "index.html";
+  
 });
 
 if (!navigator.onLine) {
-  console.log('Estamos offline');
-}
+  console.log('Estamos offline 2');
+  /* location.href = "offline.html"; */
+} 
 
 
 
-/* Alternativa */
+
 /* const isOnline = async () => {
       try {
         // El "cache no-store" es para que el fetch no guarde en cache el request

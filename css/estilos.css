@@ -1,10 +1,15 @@
 :root {
     --ion-color-primary: rgb(199, 255, 170);
     /* Set the background of the entire app */
-    --ion-background-color: #e7e7e7;
+    --ion-background-color: #fafafa;
     /* Set the font family of the entire app */
     --ion-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
     --ion-color-danger: rgb(94, 170, 132)!important;   
+}
+
+.container-mobile {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Set text color of the entire app for iOS only */
@@ -12,8 +17,24 @@
     --ion-text-color: rgb(73, 73, 73);
 }
 
+.searchbar-input {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+ion-header {
+    border: none !important;
+}
+
+ion-card {
+    border: none;
+    box-shadow: none;
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+}
+
 .md {
-    --ion-text-color: rgb(73, 73, 73);
+    --ion-text-color: rgb(39, 39, 39);
 }
 .color-search {
     background-color: rgb(53, 165, 109)!important;
@@ -21,10 +42,8 @@
 
 .vol-bg-slide {
     background-color: rgb(53, 165, 109);
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
-    padding-top: .1em;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.205);
+    padding-top: .6em;
+    padding-bottom: 2em;
 }
 .color-recientes {
     color: #e7e7e7;
@@ -32,6 +51,7 @@
 
 .vol-bg{
     background-color: black;
+    border: none;
 }
 
 .no-border{
@@ -46,7 +66,7 @@ ion-fab-button {
 }
 
 ion-slides {
-    --color: #f1f1f1;
+    --color: #ffffff;
     --background: rgb(53, 165, 109);
 }
 

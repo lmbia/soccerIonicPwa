@@ -23,24 +23,24 @@
 </head>
 
 <body>
-    <ion-app>
+    <ion-app class="container-mobile">
         <ion-header class="ion-no-border color-search">
             <ion-searchbar placeholder="Buscar equipo" color="danger"></ion-searchbar>
         </ion-header>
 
         <ion-content class="vol-bg">
-            <div class="vol-bg-slide">
-                <h2 class="ms-3 color-recientes">Partidos recientes</h2>
-                <ion-slides color="dark" pager="true" class="pb-4"></ion-slides>
+            <div class="vol-bg-slide swiper-wrapper">
+                <h2 class="color-recientes pb-2 px-3 fw-bold">Partidos recientes</h2>
+                <ion-slides color="dark" pager="true" class="pb-4 slide"></ion-slides>
                 <ion-progress-bar type="indeterminate" class="mi-spinner"></ion-progress-bar>
             </div>
 
-            <h2 class="ms-3 pt-3">Últimos partidos</h2>
+            <h2 class="pt-4 pb-1 px-3 fw-bold mb-0">Últimos partidos</h2>
             <ion-list class="ultimos-partidos"></ion-list>
             <ion-progress-bar type="indeterminate" class="mi-spinner"></ion-progress-bar>
         </ion-content>
 
-        <div class="btn-add"></div>
+        <div class="btn-add d-none"></div>
     </ion-app>
 
     <!-- Service Worker -->
